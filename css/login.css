@@ -1,0 +1,159 @@
+.all{
+    width: 82,5%;
+    background-image :url("https://cdn.buffetposeidon.com/app/media/uploaded-files/150824-phong-cach-am-thuc-trung-co-c%E1%BB%A7a-Phap-buffet-poseidon-1.jpg");
+    height: 500px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 7px;
+    border-radius: 3px;
+
+    }
+    .login1{
+        border: 2px black none;
+        border-radius: 5px;
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 600px;
+        box-shadow: 5px 5px 5px whitesmoke;
+
+}
+    .login1a{
+        line-height: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    input[type="email"],input[type="password"]{
+        width: 250px;
+        height: 25px;
+    }
+    input[type="email"],input[type="password"]:focus {
+        border-color: black; /* Thay đổi màu viền */
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Hiệu ứng đổ bóng */
+        background-color: #f9f9f9;}
+    p{
+        font-size: 14px;
+        text-align: center;
+    }
+#header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 82,5%;
+    padding:0px 20px;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;  
+}
+
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:338px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0; /* Khoảng cách giữa các phần tử và các cạnh */
+    color: #fff; /* Màu chữ trắng */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Box trong Footer */
+#footer .box {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px; /* Bo góc các box */
+    background-color: #444; /* Màu nền cho các box trong footer */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho các box */
+    display: inline-block; /* Để các box nằm ngang nhau */
+    vertical-align: top;
+}
+
+/* Đối với logo và mô tả */
+#footer .box .logo img {
+    width: 120px; /* Kích thước logo */
+    margin-bottom: 10px;
+}
+
+/* Mô tả dưới logo */
+#footer .box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Menu nhanh (quick-menu) */
+#footer .box .quick-menu {
+    margin-top: 20px;
+}
+
+#footer .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#footer .box .quick-menu .item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer .box .quick-menu .item a:hover {
+    color: #f8a5c2; /* Màu khi hover */
+}
+
+
+/* Để footer nằm ngang trên màn hình lớn */
+@media screen and (max-width: 768px) {
+    #footer .box {
+        width: 90%; /* Chế độ cột cho màn hình nhỏ */
+        margin: 10px auto;
+    }
+}
+
+/* Phần Copyright */
+#footer .box p:last-child {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+}

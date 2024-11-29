@@ -1,0 +1,340 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    padding:0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    top: 0; 
+    left: 0;
+    background-color:antiquewhite;
+    z-index: 1000; /* Để đảm bảo nó nằm trên các phần tử khác */
+    margin-bottom: 100px;
+    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;
+}
+
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+#banner {
+    width: 100%;
+    background-image :url("https://cdn.buffetposeidon.com/app/media/uploaded-files/150824-phong-cach-am-thuc-trung-co-c%E1%BB%A7a-Phap-buffet-poseidon-1.jpg");
+    height: 480px;
+    margin-top:130px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+
+#banner  .box-left h2 {
+    font-size:48px;
+    margin: 75px 0px 20px 0px ;
+    color:#fff;
+}
+
+#banner .box-left p {
+    width: 500px;
+    color:#D0D0D0;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+}
+
+#banner .box-left button:hover {
+    font-size: medium;
+    background:orange;
+}
+
+#wp-products {
+    padding-top:116px;
+    padding-bottom: 25px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 290px;
+    height: 374px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color:#fff;
+    font-size: larger;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#f42424;
+    font-size: large;
+    font-weight: bold;
+    margin-top:15px;
+}
+
+.add-to-cart {
+    align-items: center;
+    width: 191px;
+    height: 40px;
+    margin: 20px 0px 20px 50px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.6s;
+}
+
+.add-to-cart:hover {
+    font-size: medium;
+    background:orange;
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    padding: 1050px 0px 300px 0px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+
+#list-comment .item .name {
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+}
+
+#list-comment .item .text {
+    font-weight: bold;
+    text-align: center;
+    padding:20px 50px;
+    color:#fff;
+   
+}
+
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:338px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0; /* Khoảng cách giữa các phần tử và các cạnh */
+    color: #fff; /* Màu chữ trắng */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Box trong Footer */
+#footer .box {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px; /* Bo góc các box */
+    background-color: #444; /* Màu nền cho các box trong footer */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho các box */
+    display: inline-block; /* Để các box nằm ngang nhau */
+    vertical-align: top;
+}
+
+/* Đối với logo và mô tả */
+#footer .box .logo img {
+    width: 120px; /* Kích thước logo */
+    margin-bottom: 10px;
+}
+
+/* Mô tả dưới logo */
+#footer .box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Menu nhanh (quick-menu) */
+#footer .box .quick-menu {
+    margin-top: 20px;
+}
+
+#footer .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#footer .box .quick-menu .item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer .box .quick-menu .item a:hover {
+    color: #f8a5c2; /* Màu khi hover */
+}
+
+
+/* Để footer nằm ngang trên màn hình lớn */
+@media screen and (max-width: 768px) {
+    #footer .box {
+        width: 90%; /* Chế độ cột cho màn hình nhỏ */
+        margin: 10px auto;
+    }
+}
+
+/* Phần Copyright */
+#footer .box p:last-child {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+}

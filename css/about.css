@@ -1,0 +1,234 @@
+/* General reset for padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* Ensuring the body and wrapper fill the screen height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container main wrapper */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header styling */
+#header {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu styles */
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu .item {
+    margin: 0 25px;
+}
+
+#menu .item a {
+    color: #626A67;
+    text-decoration: none;
+}
+
+#menu .item a:hover {
+    color: #1d1a1a;
+    font-weight: bolder;
+}
+
+/* Action buttons (login and cart) */
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left: 22px;
+}
+
+/* Banner styling */
+#banner {
+    width: 100%;
+    background-image: url("https://cdn.buffetposeidon.com/app/media/uploaded-files/150824-phong-cach-am-thuc-trung-co-c%E1%BB%A7a-Phap-buffet-poseidon-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 480px; /* Adjust this to change the height of the banner */
+    margin-top: 40px;
+    display: flex;
+    padding: 0 133px;
+    position: relative;
+}
+
+/* Overlay effect with dark tint */
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
+    z-index: 1; /* Ensure overlay is on top of the background but below the content */
+}
+
+/* Text and button section in the banner */
+#banner .box-left {
+    z-index: 2; /* Ensure content is above the overlay */
+    color: white;
+}
+
+#banner .box-left h2 {
+    font-size: 48px;
+    margin: 75px 0 20px 0;
+}
+
+#banner .box-left p {
+    width: 500px;
+    color: #D0D0D0;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top: 41px;
+    background: #1d1a1a;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+#banner .box-left button:hover {
+    font-size: medium;
+    background: orange;
+}
+
+/* About section styling */
+#about-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+/* General about content */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+}
+
+
+
+#footer {
+    width: 100%;
+    background: rgb(0, 0, 0, 0.79);
+    height: 322px;
+    margin-top: 338px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Box inside footer */
+#footer .box {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #444;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer logo */
+#footer .box .logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+#footer .box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#footer .box .quick-menu {
+    margin-top: 20px;
+}
+
+#footer .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#footer .box .quick-menu .item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer .box .quick-menu .item a:hover {
+    color: #f8a5c2;
+}
+
+/* Footer responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    #footer .box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Footer copyright styling */
+#footer .box p:last-child {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ccc;
+}

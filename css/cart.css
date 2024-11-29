@@ -1,0 +1,252 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    padding:0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    top: 0; 
+    left: 0;
+    background-color:antiquewhite;
+    z-index: 1000; /* Để đảm bảo nó nằm trên các phần tử khác */
+    margin-bottom: 100px;
+    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;
+}
+
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+
+
+
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0; /* Khoảng cách giữa các phần tử và các cạnh */
+    color: #fff; /* Màu chữ trắng */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Box trong Footer */
+#footer .box {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px; /* Bo góc các box */
+    background-color: #444; /* Màu nền cho các box trong footer */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho các box */
+    display: inline-block; /* Để các box nằm ngang nhau */
+    vertical-align: top;
+}
+
+/* Đối với logo và mô tả */
+#footer .box .logo img {
+    width: 120px; /* Kích thước logo */
+    margin-bottom: 10px;
+}
+
+/* Mô tả dưới logo */
+#footer .box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Menu nhanh (quick-menu) */
+#footer .box .quick-menu {
+    margin-top: 20px;
+}
+
+#footer .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#footer .box .quick-menu .item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer .box .quick-menu .item a:hover {
+    color: #f8a5c2; /* Màu khi hover */
+}
+
+
+/* Để footer nằm ngang trên màn hình lớn */
+@media screen and (max-width: 768px) {
+    #footer .box {
+        width: 90%; /* Chế độ cột cho màn hình nhỏ */
+        margin: 10px auto;
+    }
+}
+
+/* Phần Copyright */
+#footer .box p:last-child {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+
+
+#giohang::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.buffetposeidon.com/app/media/uploaded-files/150824-phong-cach-am-thuc-trung-co-c%E1%BB%A7a-Phap-buffet-poseidon-1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 220px;
+    font-size: 28px;
+    color:#ddd;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Styling for buttons */
+#giohang.button {
+    padding: 8px 15px;
+    background-color: #f8a101;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#giohang.button:hover {
+    background-color: #e07b00;
+}
+
+/* Form input field styling */
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#dathang {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+#dathang a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f8a101;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#dathang a:hover {
+    background-color: #e07b00;
+}
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    #dathang.a {
+        margin-left: 300px;
+    }
+
+    td, th {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        width: 40px;
+    }
+
+    #giohang.button {
+        padding: 6px 12px;
+    }
+}
+
